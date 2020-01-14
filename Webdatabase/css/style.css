@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+
+.rating {
+    position: absolute;
+    left: 17%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+}
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+
+        .rating label:before {
+            content: '\f005';
+            font-family: fontAwesome;
+            position: relative;
+            display: block;
+            font-size: 20px;
+            color: #101010;
+        }
+
+        .rating label:after {
+            content: '\f005';
+            font-family: fontAwesome;
+            position: absolute;
+            display: block;
+            font-size: 20px;
+            color: #1f9cff;
+            top: 0;
+            opacity: 0;
+            transition: .5s;
+            text-shadow: 0 2px 5px rgba(0,0,0,.5);
+        }
+
+        .rating label:hover:after,
+        .rating label:hover ~ label:after,
+        .rating input:checked ~ label:after {
+            opacity: 1;
+        }
+
+        .cssradio input[type="radio"]{display:none;}
+        .cssradio label {padding:10px ;
+                         margin: 15px 10px 0 0 ;
+                         border-radius: 3px;
+                         display:inline-block;
+                         color: #fff;
+                         cursor: pointer;
+                         background:#c3c3c3;
+        }
+        .cssradio input:checked + label{
+            background: #1da1f2;
+            font-weight: bold;
+        }

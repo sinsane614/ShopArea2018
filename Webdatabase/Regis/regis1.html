@@ -1,0 +1,122 @@
+
+      
+      <!DOCTYPE html>
+<html lang="en" >
+    <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+        <title>Shop Area</title>
+    
+        <script language="javascript">
+    function CheckForm(){
+        if(Addproduct.Shopname.value == ''){
+            alert('Please complete the information.')
+            Addproduct.Shopname.focus()
+            return false   
+            }
+            else if  (Addproduct.ProductName.value =''){
+            alert('Please complete the information.')
+            Addproduct.ProductName.focus()
+            return false   
+            }
+            else if  (Addproduct.Category.value =''){
+            alert('Please complete the information.')
+            Addproduct.Category.focus()
+            return false   
+            }
+            else if  (Addproduct.Price.value =''){
+            alert('Please complete the information.')
+            Addproduct.Price.focus()
+            return false   
+            }
+    }    
+    </script>    
+
+    
+    </head>
+    
+    
+    <body>
+      
+         <div class="login-wrapper">
+          <div class="login-left">
+         
+            <div class="h1">Click to REGISTER</div>
+          </div>
+      
+          <div class="login-right">
+              <div class="h2">Register</div>
+        
+              <div class="form-group">
+                  <input type="text" id="email" placeholder="Email">
+                  <label for="Email">Email</label>
+              </div>
+              
+              <div class="form-group">
+                   <label for="Username">Username</label>
+                  <input type="text" id="username" placeholder="Username">
+        
+              </div>
+              
+              <div class="form-group">
+                 <label for="Password">Password</label>
+                 <input type="password" id="password" placeholder="Password">
+                  
+              </div>
+              <div class="form-group">
+                  <label for="Password">FirstName</label>
+                  <input type="text" id="firstname" placeholder="FirstName">
+                  
+              
+              </div>
+              <div class="form-group">
+                  <label for="LastName">LastName</label>
+                  <input type="text" id="lastname" placeholder="LastName">
+                
+              
+              </div>
+                
+              
+              <div class="form-group">
+                <br> <label for="LastName">Gender</label><br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other<br>
+              </div>
+               
+              <div class="form-group"> 
+                <input type="datetime-local" name="DOB"><br> 
+              <br>  News : <br> 
+                <input type="radio" name="News" value="Yes"> Yes<br>
+                <input type="radio" name="News" value="No"> No<br>
+              </div>
+               
+              <div class="checkbox-container">
+                <input type="checkbox">
+                  I agree with the term of service
+              </div>
+              
+              <div class="button-area">
+                  <button class="btn btn-secondary">Login</button>
+                  <button class="btn btn-primary">Sign Up</button>
+              </div>
+              
+          
+          </div>
+          
+           <div class="form-group">
+              </div>
+          
+      
+      </div>
+     
+        
+        
+        
+         <script> src="regis.js" </script>
+        
+        
+    </body>
+</html>
